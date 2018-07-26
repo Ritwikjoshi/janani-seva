@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.janni.botlabs.jananiseva.registrationActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp">
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/NameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="अपना नाम दर्ज करें"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/mobileEdit"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="मोबाइल नंबर दर्ज करें"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/aadharEdit"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:hint="आधार नंबर दर्ज करें"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/pctsEdit"
+                android:padding="16dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:hint="PCTS नंबर दर्ज करें"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="जन्म की तारीखं"
+            android:inputType="date"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateLinear"
+            android:orientation="horizontal">
+        <TextView
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="तारीख/महीना/साल"
+            android:id="@+id/dateText"
+            android:inputType="date"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/calendar"/>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/StateEdit"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="राजस्थान"
+            android:enabled="false" />
+        </android.support.design.widget.TextInputLayout>
+        <Spinner
+            android:id="@+id/CitySpinner"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/AddressEdit"
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:textAlignment="center"
+
+            android:layout_height="wrap_content"
+            android:hint="पता दर्ज करें"
+            android:layout_marginTop="8dp"
+            android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/weightEdit"
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:hint="वजन दर्ज करें (केजी में)"
+            android:layout_marginTop="8dp"
+            android:inputType="numberDecimal"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/bloodGroupSpinner"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="5dp"/>
+
+            <Spinner
+                android:id="@+id/bloodGroupPNSpinner"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/FirstContactNameEdit"
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:hint="प्रथम संपर्क व्यक्ति का नाम दर्ज करें"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/FirstContactMobileEdit"
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:hint="प्रथम संपर्क व्यक्ति मोबाइल दर्ज करें"
+            android:inputType="phone"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pickContact"
+                android:background="@color/colorAccent"
+                android:text="संपर्क का चयन करें"
+                android:textColor="@color/text_shadow_white"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/firstMenstrualMissDate"
+                android:padding="16dp"
+                android:textAlignment="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="आखिरी तारीख जब मासिक धर्म चूक गया?"
+                android:inputType="date"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/menstrualcalender"
+                android:layout_gravity="center"
+                android:src="@drawable/calendar"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gravida"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="कुल मिलाकर आप कितनी बार गर्भवती हुई हैं?"
+            android:inputType="number"/>
+
+        <Spinner
+            android:id="@+id/gravidaSpinner"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/parity"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="इससे पहले आप कितनी बार गर्भवती हुई हैं?"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/paritynumber"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number"/>
+
+
+        <TextView
+            android:id="@+id/living"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="आपके कितने बच्चे जीवित हैं?"
+            android:inputType="number"/>
+
+        <Spinner
+            android:id="@+id/livingSpinner"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/aborted"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="आपके कितने बच्चे निरस्त हो गए हैं?"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/abortedNumber"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="रजिस्टर करें"
+            android:background="@color/colorAccent"
+            android:textColor="#ffffff"/>
+
+
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</ScrollView>

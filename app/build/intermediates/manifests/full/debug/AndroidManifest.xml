@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.janni.botlabs.jananiseva"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.janni.botlabs.jananiseva.MainActivity"
+            android:theme="@style/darkToolbar" />
+        <activity
+            android:name="com.janni.botlabs.jananiseva.ChatBot"
+            android:parentActivityName="com.janni.botlabs.jananiseva.MainActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_activity"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.janni.botlabs.jananiseva.Awareness"
+            android:parentActivityName="com.janni.botlabs.jananiseva.MainActivity"
+            android:theme="@style/darkToolbar" >
+            <meta-data
+                android:name="android.support.PARENT_activity"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.janni.botlabs.jananiseva.stepperActivity"
+            android:parentActivityName="com.janni.botlabs.jananiseva.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_activity"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.janni.botlabs.jananiseva.registrationActivity"
+            android:parentActivityName="com.janni.botlabs.jananiseva.Login" >
+            <meta-data
+                android:name="android.support.PARENT_activity"
+                android:value=".Login" />
+        </activity>
+        <activity
+            android:name="com.janni.botlabs.jananiseva.Jagrukta"
+            android:parentActivityName="com.janni.botlabs.jananiseva.MainActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_activity"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.janni.botlabs.jananiseva.Login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.janni.botlabs.jananiseva.WarningSigns"
+            android:parentActivityName="com.janni.botlabs.jananiseva.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_activity"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.janni.botlabs.jananiseva.Excercise"
+            android:parentActivityName="com.janni.botlabs.jananiseva.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_activity"
+                android:value=".MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+    </application>
+
+</manifest>

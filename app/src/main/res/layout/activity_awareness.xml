@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.janni.botlabs.jananiseva.Awareness">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:title="@string/app_name"
+        android:id="@+id/title"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_marginVertical="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:orientation="vertical">
+
+                    <com.google.android.youtube.player.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="#fff"
+                        android:id="@+id/Youtubeplayer"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="गर्भावस्था के 4 महीने"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="शुरुआती लक्षण"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:background="#d9fdde"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:textColor="#000000" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#fff"
+        android:id="@+id/Youtubeplayer2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="प्रेगनेंसी टिप्स"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="अनुसरण करने के लिए सात युक्तियाँ"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:background="#d9fdde"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:textColor="#000000" />
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:orientation="vertical">
+
+                    <com.google.android.youtube.player.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="#fff"
+                        android:id="@+id/Youtubeplayer3"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="पहली तिमाही गर्भावस्था के लिए 5 टिप्स"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="देखभाल कैसे करें"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:background="#d9fdde"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:textColor="#000000" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:orientation="vertical">
+
+                    <com.google.android.youtube.player.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="#fff"
+                        android:id="@+id/Youtubeplayer4"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="गर्भावस्था आहार योजना"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="शीर्ष 10 खाद्य पदार्थ गर्भावस्था से बचते हैं"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:background="#d9fdde"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
